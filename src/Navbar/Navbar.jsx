@@ -35,7 +35,7 @@ window.addEventListener('scroll',()=>{
                     }}></FaBars>
                 <p className='sm:hidden'>Menu</p>
                 </div>
-                <div className={`ms-4  xl:block hidden ${data > 57 ? 'block' :'hidden'} animate__animated animate__bounce animte_faster`}>
+                <div className={`ms-4  ${data > 57 ? 'hidden xl:block ' :'hidden xl:hidden'} animate__animated animate__bounce animte_faster`}>
                 <Buttoncodingku>
                     BELAJAR PEMROGRAMAN GRATIS
                 </Buttoncodingku>
