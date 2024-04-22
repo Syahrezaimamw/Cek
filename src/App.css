@@ -1,0 +1,9 @@
+.colorborder{
+  border-color: transparent;
+}
+.colorborder:hover{
+  border-color: rgb(242, 241, 239);
+}
+.border-nav-color{
+  border-color: rgb(214, 210, 210);
+}
