@@ -13,7 +13,7 @@ export const FilterNav = () => {
         type="search"
         placeholder='Cari pelajaran'
         onChange={(e) => handleChange(e.target.value)}
-        className={`relative w-[100%] m-0 block flex-auto rounded border border-none bg-transparent bg-clip-padding px- py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill focus:activ  placeholder:text-[15px] dark:focus:border-primary  bg-red-900"
+        className={`relative w-[100%] m-0 block flex-auto rounded border border-none bg-transparent bg-clip-padding px- py-[0.25rem] text-base font-normal text-black  leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill focus:activ  placeholder:text-[15px] dark:focus:border-primary  bg-red-900"
         placeholder="Apa yang ingin anda pelajari?"
         aria-label="Search"
         id="exampleFormControlInput2"
