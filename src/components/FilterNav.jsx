@@ -1,29 +1,19 @@
 import React, { useContext } from 'react'
 import { FaAngleRight } from "react-icons/fa6";
 import { Filtercontex } from '../context/Ycontext';
+import { FaMagnifyingGlass } from "react-icons/fa6";
+
 export const FilterNav = () => {
     const {data,searchvalue,err,handleChange}=useContext(Filtercontex)
   return (
     <div className="relative flex w-[80%] lg:w-[100%] items-center gap-3 px-5 py-2 border-2 border-solid lg:flex group border-neutral-200">
-    <span
-        className="flex items-center whitespace-nowrap  py-[0.25rem] text-surface text-gray-500 dark:border-neutral-400 dark:text-white [&>svg]:h-5 [&>svg]:w-5"
-        id="button-addon2">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            // stroke-width="2"
-            stroke="currentColor">
-            <path
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-        </svg>
-    </span>
+  <FaMagnifyingGlass className='text-xl text-gray-500'/>
     <input
 
         type="search"
-        placeholder='Apa yang ingin anda pelajari'
+        placeholder='Cari pelajaran'
         onChange={(e) => handleChange(e.target.value)}
-        className={`relative m-0 block flex-auto rounded border border-none bg-transparent bg-clip-padding px- py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill focus:activ  placeholder:text-[15px] dark:focus:border-primary w-[210px] bg-red-900"
+        className={`relative w-[100%] m-0 block flex-auto rounded border border-none bg-transparent bg-clip-padding px- py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill focus:activ  placeholder:text-[15px] dark:focus:border-primary  bg-red-900"
         placeholder="Apa yang ingin anda pelajari?"
         aria-label="Search"
         id="exampleFormControlInput2"
